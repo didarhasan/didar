@@ -1,0 +1,438 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+
+    background: #f6f9f9;
+    padding: 30px 0;
+}
+
+.header_wrpper {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {}
+
+.logo img {}
+
+nav {}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+}
+
+
+nav ul li {}
+
+nav ul li a {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 25px;
+    color: #2d3950;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    min-height: 88vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner_content {
+
+    text-align: center;
+}
+
+.banner_content h1 {
+
+    color: #fff;
+    font-size: 90px;
+    margin-bottom: 14px;
+}
+
+.banner_content p {
+
+    color: #fff;
+    margin: 30px 0;
+}
+
+.banner_content button {
+
+    background: transparent;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+
+.banner_content span {
+
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #15a4fa;
+}
+
+.icon {
+
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    color: #fff;
+    animation: updone 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes updone {
+    0% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: 13%;
+    }
+}
+
+.banner_content button:hover {
+    background-color: #15a4fa;
+}
+
+.simple_section {
+
+    background: #f6f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.simple_section h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #2d3950;
+    margin-bottom: 30px;
+}
+
+.simple_section p {
+    color: #999999;
+    line-height: 22px;
+}
+
+.content_wrpper {
+    width: 80%;
+    margin: auto;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+
+    width: 30%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.item h3 {
+
+    color: #2d3950;
+}
+
+.item p {
+
+    color: #999999;
+    margin: 15px 0;
+}
+
+.features_icon {
+
+    height: 100px;
+    width: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,2989d8+50,48baff+50,5fc3ff+50,2989d8+100,5fc3ff+100,2989d8+100 */
+    background: #48baff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #48baff 0%, #2989d8 50%, #48baff 50%, #5fc3ff 50%, #2989d8 100%, #5fc3ff 100%, #2989d8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #48baff 0%, #2989d8 50%, #48baff 50%, #5fc3ff 50%, #2989d8 100%, #5fc3ff 100%, #2989d8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #48baff 0%, #2989d8 50%, #48baff 50%, #5fc3ff 50%, #2989d8 100%, #5fc3ff 100%, #2989d8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#2989d8', GradientType=1);
+    /* IE6-9 */
+
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    margin: auto;
+    color: #fff;
+}
+
+.showcase {
+
+    background: #f6f9f9;
+    padding: 100px 0;
+}
+
+.showcase_header {
+
+    text-align: center;
+}
+
+.showcase_header h1 {
+
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.showcase_header p {}
+
+.showcase_item {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.items {
+
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.items img {
+
+    width: 100%;
+}
+
+.items::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: #15a4fa;
+
+
+    transition: .4s all ease-in-out;
+    opacity: .5;
+
+}
+
+.items::before {
+    content: '';
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: #15a4fa;
+
+
+    transition: .4s all ease-in-out;
+    opacity: .5;
+
+}
+
+.items:hover::before {
+
+    width: 50%;
+}
+
+.items:hover::after {
+
+
+    width: 50%;
+}
+
+.social_icon {
+
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.social_icon ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+.social_icon ul li {
+
+    height: 30px;
+    width: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+}
+
+.social_icon ul li a {
+
+    color: #fff;
+}
+
+.items:hover .social_icon {
+    opacity: 1;
+    top: 50%;
+}
+
+form {
+
+    width: 80%;
+    margin: auto;
+}
+
+form input {
+
+    width: 100%;
+    padding: 8px 5px;
+    margin: 10px 0;
+    background: transparent;
+}
+
+form textarea {
+
+    width: 100%;
+    height: 200px;
+    padding: 8px 5px;
+    background: transparent;
+}
+
+form .d {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+form input[type='submit'] {
+
+    background: #15a4fa;
+    border: none;
+    padding: 12px 30px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+}
+
+
+form input[type='checkbox'] {
+
+    width: inherit;
+}
+
+form label {
+    color: #fff;
+}
+
+.check {}
+
+.content_us {
+    background-image: url(../images/did.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    position: relative;
+    z-index: 0;
+}
+
+.content_us::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950;
+    opacity: .5;
+
+}
+
+.one {}
+
+.one h2 {
+
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.one p {
+
+    text-align: center;
+    color: #999999;
+    margin: 10px 0;
+}
+
+.two {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.three {}
+
+.three h3 {}
+
+.four {}
+
+.four nav {}
+
+
+.four nav ul {}
+
+
+.four nav ul li {}
+
+
+.four nav ul li a {
+
+    background: #15a4fa;
+   
+    padding: 10px;
+    font-size: #fff;
+    color: #fff;
+    border: 1px solid #2d3950;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+}
+.four nav ul li a:hover{
+    background-color: #15a4fa;
+}
